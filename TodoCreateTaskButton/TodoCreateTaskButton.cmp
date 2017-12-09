@@ -1,0 +1,3 @@
+<aura:component >
+	<button class="slds-button slds-button_neutral" onclick="{!c.dispatchCreateTaskEvent}">Create Task</button>
+</aura:component>

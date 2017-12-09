@@ -1,0 +1,5 @@
+<aura:component >
+    <aura:attribute name="arrayIndex" type="Integer" />
+    <aura:registerEvent name="deleteTask" type="c:TodoDeleteTask" />
+	<button class="slds-button slds-button_destructive" onclick="{!c.handleClick}">Delete</button>
+</aura:component>

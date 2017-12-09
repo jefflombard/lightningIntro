@@ -1,0 +1,14 @@
+<aura:component >
+    <aura:attribute name="arrayIndex" type="Integer" />
+    <aura:attribute name="taskName" type="String" />
+	<tr>
+      <td data-label="Task">
+        <div class="slds-truncate" title="{!v.taskName}">
+            <ui:outputText value="{!v.taskName}" />  
+        </div>
+      </td>
+      <td data-label="Action">
+          <c:TodoDeleteButton arrayIndex="{!v.arrayIndex}"/>
+      </td>
+    </tr>
+</aura:component>

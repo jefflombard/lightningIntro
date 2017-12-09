@@ -1,0 +1,20 @@
+<aura:component >
+    <aura:attribute name="taskList" type="String[]"/>
+    <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+      <thead>
+        <tr class="slds-text-title_caps">
+          <th scope="col">
+            <div class="slds-truncate" title="Task">Task</div>
+          </th>
+          <th scope="col">
+            <div class="slds-truncate" title="Action">Action</div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+          <aura:iteration items="{!v.taskList}" var="task" indexVar="index">
+              <c:TodoTask taskName="{!task}" arrayIndex="{!index}"/>
+          </aura:iteration>
+      </tbody>
+    </table>	
+</aura:component>
